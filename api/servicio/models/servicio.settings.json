@@ -1,0 +1,66 @@
+{
+  "kind": "collectionType",
+  "collectionName": "servicios",
+  "info": {
+    "name": "servicio"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "category": {
+      "model": "categories"
+    },
+    "price": {
+      "type": "decimal",
+      "required": true
+    },
+    "discount": {
+      "type": "integer"
+    },
+    "poster": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "url": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "summary": {
+      "type": "text",
+      "required": true
+    },
+    "video": {
+      "type": "string",
+      "required": true
+    },
+    "screenshots": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "releaseDate": {
+      "type": "date",
+      "required": true
+    }
+  }
+}

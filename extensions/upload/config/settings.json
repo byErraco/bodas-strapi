@@ -1,0 +1,8 @@
+{
+  "provider": "cloudinary",
+  "providerOptions":{
+    "cloud_name": "studio73",
+    "api_key": "521148374429524",
+    "api_secret": "auYNb91_IcwiEoucOQiTfgJef_Q"
+  }
+}
