@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "servicios",
   "info": {
-    "name": "servicio"
+    "name": "servicio",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -60,6 +61,14 @@
     },
     "releaseDate": {
       "type": "date",
+      "required": true
+    },
+    "area": {
+      "type": "string",
+      "required": true
+    },
+    "capacity": {
+      "type": "string",
       "required": true
     }
   }
